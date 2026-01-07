@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,40 +7,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Title</title>
+    <title>Advolatum - Одежда для каждого</title>
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="header_menu">
-                <div class="line_menu">
+                <div class="mobile_menu_toggle">
                     <div class="menu_line"></div>
                     <div class="menu_line"></div>
                     <div class="menu_line"></div>
                 </div>
                 <div class="menu_top">
                     <div class="top_links">
-                        <img src="/Image/Component 2.svg" alt="">
-                        <a href="#">
-                            Главная
-                        </a>
-                        <a href="#">
-                            коллекции
-                        </a>
-                        <a href="#">
-                            О нас
-                        </a>
-                        <a href="#">
-                            контакты
-                        </a>
-                        <a href="#">
-                            корзина
-                        </a>
+                        <img src="./Image/Component 2.svg" alt="Advolatum Logo" class="logo">
+                        <nav class="desktop_nav">
+                            <a href="#">Главная</a>
+                            <a href="#">коллекции</a>
+                            <a href="#">О нас</a>
+                            <a href="#">контакты</a>
+                            <a href="#">корзина</a>
+                        </nav>
                     </div>
                     <div class="top_icons">
-                        <a href=""><img src="/Image/Frame 10.png" alt=""></a>
-                        <a href=""><img src="/Image/Frame 9.png" alt=""></a>
-                        <a href=""><img src="/Image/Frame 8.png" alt=""></a>
+                        <a href="#"><img src="./Image/Frame 10.png" alt="Social Icon"></a>
+                        <a href="#"><img src="./Image/Frame 9.png" alt="Social Icon"></a>
+                        <a href="#"><img src="./Image/Frame 8.png" alt="Social Icon"></a>
                     </div>
                 </div>
                 <div class="menu_bottom">
@@ -51,135 +43,154 @@
             </div>
         </div>
     </header>
+
     <section class="section_main"> 
         <div class="container">
             <div class="main_main">
-                <img class="main_logo" src="/Image/Component 2.svg" alt="">
+                <img class="main_logo" src="./Image/Component 2.svg" alt="Advolatum">
                 <h1 class="main_title">Одежда для каждого</h1>
                 <h1 class="main_back">Одежда для каждого</h1>
                 <p class="main_text">на каждый день</p>
-                <a class="mian_button"><img src="/Image/Лого.svg" alt=""> Каталог</a>
+                <a href="#" class="main_button">
+                    <img src="./Image/Лого.svg" alt=""> Каталог
+                </a>
             </div>
         </div>
     </section>
-    <section class="seson">
+
+    <section class="season">
         <div class="container">
-            <div class="seson_seson">
-                <h2 class="seson_title_1">на этот сезон</h2>
-                <h1 class="seson_back">на этот сезон</h1>
-                <img class="seson_image" src="/Image/photo_2022-10-05 23.01.png" alt="">
-                <div class="img_inner">
-                    <p class="seson_text">Текст описания конкретной <br> коллекции с возможным дополнением <br> уникальности</p>
-                    <a href="#"><img src="/Image/Лого.svg" alt=""> Каталог</a>
+            <div class="season_content">
+                <h2 class="season_title">на этот сезон</h2>
+                <h1 class="season_back">на этот сезон</h1>
+                <div class="season_image_container">
+                    <img class="season_image" src="./Image/photo_2022-10-0523.01.png" alt="Коллекция сезона">
+                    <div class="season_overlay">
+                        <p class="season_text">Текст описания конкретной коллекции с возможным дополнением уникальности</p>
+                        <a href="#" class="season_button">
+                            <img src="./Image/Лого.svg" alt=""> Каталог
+                        </a>
+                    </div>
                 </div>
-                <div class="arrow_1"></div>
-                <div class="lines">
-                    <div class="liner"></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div class="season_navigation">
+                    <div class="arrow"></div>
+                    <div class="dots">
+                        <div class="dot active"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="title">
+
+    <section class="featured">
         <div class="container">
-            <h2 class="title_title_1">Актуальное</h2>
-            <h1 class="title_title_2">Актуаль</h1>
-            <h1 class="title_title_2 title_title_21">ное</h1>
+            <h2 class="featured_title">Актуальное</h2>
+            <h1 class="featured_back">Актуальное</h1>
         </div>
     </section>
-    <section class="card">
+
+    <section class="products">
         <div class="container">
-            <div class="card_cards">
-                <div class="card_1">
-                    <img src="/Image/photo_2022-10-06 00.03 1.png" alt="">
-                    <div>
-                        <p class="card_text">Костюм Advolatum <br>соцветие</p>
-                        <div class="card_price">
-                            <p class="price">3751</p>
-                            <a href="#">В корзину</a>
+            <div class="products_grid">
+                <div class="product_card">
+                    <img src="./Image/photo_2022-10-06 00.03 1.png" alt="Костюм Advolatum">
+                    <div class="product_info">
+                        <p class="product_name">Костюм Advolatum соцветие</p>
+                        <div class="product_price">
+                            <p class="price">3751 ₽</p>
+                            <button class="add_to_cart">В корзину</button>
                         </div>
                     </div>
                 </div>
-                <div class="card_2">
-                    <img src="/Image/photo_2022-10-06 00.03 1 (1).png" alt="">
-                    <div>
-                        <p class="card_text">Костюм Advolatum <br>соцветие</p>
-                        <div class="card_price">
-                            <p class="price">3751</p>
-                            <a href="#">В корзину</a>
+                <div class="product_card">
+                    <img src="./Image/photo_2022-10-06 00.03 1 (1).png" alt="Костюм Advolatum">
+                    <div class="product_info">
+                        <p class="product_name">Костюм Advolatum соцветие</p>
+                        <div class="product_price">
+                            <p class="price">3751 ₽</p>
+                            <button class="add_to_cart">В корзину</button>
                         </div>
                     </div>
                 </div>
-                <div class="card_3">
-                    <img src="/Image/photo_2022-10-06 00.03 1.png" alt="">
-                    <div>
-                        <p class="card_text">Костюм Advolatum <br>соцветие</p>
-                        <div class="card_price">
-                            <p class="price">3751</p>
-                            <a href="#">В корзину</a>
+                <div class="product_card">
+                    <img src="./Image/photo_2022-10-05 23.01.png" alt="Костюм Advolatum">
+                    <div class="product_info">
+                        <p class="product_name">Костюм Advolatum соцветие</p>
+                        <div class="product_price">
+                            <p class="price">3751 ₽</p>
+                            <button class="add_to_cart">В корзину</button>
                         </div>
                     </div>
                 </div>
-                <div class="card_4">
-                    <img src="/Image/photo_2022-10-06 00.03 1.png" alt="">
-                    <div>
-                        <p class="card_text">Костюм Advolatum <br>соцветие</p>
-                        <div class="card_price">
-                            <p class="price">3751</p>
-                            <a href="#">В корзину</a>
+                <div class="product_card">
+                    <img src="./Image/photo_2022-10-06 00.03 1.png" alt="Костюм Advolatum">
+                    <div class="product_info">
+                        <p class="product_name">Костюм Advolatum соцветие</p>
+                        <div class="product_price">
+                            <p class="price">3751 ₽</p>
+                            <button class="add_to_cart">В корзину</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="watch">
-                <a class="watch_more" href="#">Смотреть больше</a>
+            <div class="view_more">
+                <a href="#" class="view_more_btn">Смотреть больше</a>
             </div>
         </div>
     </section>
-    <section class="map">
+
+    <section class="contacts">
         <div class="container">
-            <div class="map_map">
-                <div class="map_texts">
-                    <h2 class="map_title">мы всегда на связи</h2>
-                    <h1 class="map_back">контакты</h1>
+            <div class="contacts_content">
+                <div class="contacts_header">
+                    <h2 class="contacts_title">мы всегда на связи</h2>
+                    <h1 class="contacts_back">контакты</h1>
                 </div>
-                <div class="map_img">
-                    <img class="map_img_img" src="/Image/Rectangle (1).png" alt="">
-                    <div class="map_contact">
-                        <p class="num">8(000)000-00-00</p>
+                <div class="map_section">
+                    <div class="map_image">
+                        <img src="./Image/Rectangle (1).png" alt="Карта">
+                    </div>
+                    <div class="contact_info">
+                        <p class="phone">8(000)000-00-00</p>
                         <p class="email">info@advolatum.ru</p>
-                        <div class="map_icons">
-                            <img src="/Image/Frame 10.png" alt="">
-                            <img src="/Image/Frame 9.png" alt="">
-                            <img src="/Image/Frame 8.png" alt="">
+                        <div class="social_icons">
+                            <img src="./Image/Frame 10.png" alt="Social">
+                            <img src="./Image/Frame 9.png" alt="Social">
+                            <img src="./Image/Frame 8.png" alt="Social">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <footer class="footer">
         <div class="container">
-            <div class="footer_footer">
-                <div class="footer_text">
+            <div class="footer_content">
+                <div class="footer_links">
                     <p>политика конфиденциальности</p>
                     <p>согласие на обработку персональных данных</p>
                 </div>
-                <div class="footer_mid">
-                    <img src="/Image/Component 2.svg" alt="">
-                    <div class="mid_text">
+                <div class="footer_logo">
+                    <img src="./Image/Component 2.svg" alt="Advolatum">
+                    <div class="copyright">
                         <p>2024</p>
                         <p>GruboGovorya</p>
                     </div>
                 </div>
-                <div class="footer_icons">
-                    <img src="/Image/Frame 10.png" alt=""><img src="/Image/Frame 9.png" alt=""><img src="/Image/Frame 8.png" alt="">
+                <div class="footer_social">
+                    <img src="./Image/Frame 10.png" alt="Social">
+                    <img src="./Image/Frame 9.png" alt="Social">
+                    <img src="./Image/Frame 8.png" alt="Social">
                 </div>
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,490 +1,637 @@
-@font-face { font-family: Uindbase ; src: url('/font/UF1.ttf'); } 
-@font-face { font-family: Usually-bold ; src: url('/font/Usually-font-Bold.otf'); } 
-@font-face { font-family: Usually ; src: url('/font/Usually-font.otf'); } 
+@font-face { font-family: Uindbase; src: url('font/UF1.ttf'); } 
+@font-face { font-family: Usually-bold; src: url('font/Usually-font-Bold.otf'); } 
+@font-face { font-family: Usually; src: url('font/Usually-font.otf'); } 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x:hidden;
 }
 
-body{
+body {
     background-color: #0E141C;
+    color: #FFF;
+    font-family: 'Uindbase', sans-serif;
+    overflow-x: hidden;
 }
 
-.container{
+.container {
     max-width: 1250px;
     margin: 0 auto;
+    padding: 0 20px;
 }
-a,p,h2{
+
+a {
     color: #FFF;
     text-decoration: none;
-    font-family: 'Uindbase';
-    font-weight: 400;
-}
-h1{
-    font-family: 'Usually-bold';
+    transition: color 0.3s ease;
 }
 
+a:hover {
+    color: #D1C12B;
+}
 
+h1, h2, h3 {
+    font-family: 'Usually-bold', sans-serif;
+}
 
-.menu_top{
+.header {
+    padding: 20px 0;
+}
+
+.header_menu {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 43px;
+    flex-direction: column;
+    gap: 20px;
 }
-.top_links{
+
+.mobile_menu_toggle {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu_line {
+    width: 30px;
+    height: 3px;
+    background-color: #D1C12B;
+    border-radius: 2px;
+}
+
+.menu_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top_links {
     display: flex;
     align-items: center;
     gap: 30px;
 }
-.top_links a{
-    font-size: 20px;
-    line-height: 12px;
+
+.logo {
+    width: 120px;
+    height: auto;
 }
-.menu_bottom{
+
+.desktop_nav {
     display: flex;
-    margin-top: 20px;
+    gap: 30px;
+}
+
+.desktop_nav a {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.top_icons {
+    display: flex;
+    gap: 15px;
+}
+
+.top_icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.menu_bottom {
+    display: flex;
+    justify-content: center;
     gap: 68px;
-    margin-left: 130px;
-}
-.menu_bottom a{
-    font-size: 15px;
-    line-height: 15px;
 }
 
-.main_main{
-    text-align: center;
-    margin-top: 232px;
-    overflow-y:hidden
+.menu_bottom a {
+    font-size: 16px;
+    text-transform: lowercase;
 }
-.main_title{
-    color: #fff;
-    font-size: 120px;
-    line-height: 113.23px;
+.section_main {
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+}
+
+.main_main {
+    position: relative;
+    z-index: 2;
+}
+
+.main_logo {
+    width: 150px;
+    margin-bottom: 30px;
+}
+
+.main_title {
+    font-size: 5rem;
+    line-height: 1.1;
     text-shadow: 2px 2px 5px #000, 2px 2px 10px #ff0;
-}
-.main_back{
-    color: #FFF;
-    font-size: 150px;
-    line-height: 128.07px;
-    position: absolute;
-    text-align: center;
-    z-index: -1;
-    bottom: 150px;
-    left: 10px;
-    color: #1F252D;
-}
-.main_text{
-    margin-top: 27px;
-    color: #fff;
-    font-size: 25px;
-    line-height: 25px;
-}
-.mian_button{
-    font-family: "Rosario", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24.24px;
-    position: relative;
-    top: 163px;
-    left: 530px;
-    border: solid 2px #D1C12B;
-    color: #D1C12B;
-    padding: 14.5px 50px;
-    border-radius: 30px;
-    text-shadow: 2px 2px 5px #000, 2px 2px 10px #D1C12B;
-}
-.seson{
-    margin-top: 214px;
-}
-.seson_title_1{
-    font-size: 180px;
-    line-height: 160px;
-    text-transform: uppercase;
-    overflow-y:hidden;
-}
-.seson_back{
-    font-size: 180px;
-    line-height: 160px;
-    color: #1F252D;
-    position: absolute;
-    z-index: -1;
-    bottom: -420px;
-    text-transform: uppercase;
-}
-
-.img_inner{
-    text-align: center;
-    position: relative;
-    left: 400px;
-    height: 120px;
-    bottom: 280px;
-}
-.seson_text{
-    font-size: 15px;
-    line-height: 15px;
-}
-.img_inner a{
-    font-family: "Rosario", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24.24px;
-    border: solid 2px #D1C12B;
-    color: #D1C12B;
-    padding: 14.5px 50px;
-    border-radius: 30px;
-    text-shadow: 2px 2px 5px #000, 2px 2px 10px #D1C12B;
-    position: relative;
-    top: 25px;
-}
-.arrow_1{
-    color: #FFF;
-    border: solid 3px white;
-    width: 209px;
-    position: relative;
-    bottom: 170px;
-    left: 25px;
-}
-.lines{
-    display: flex;
-    position: relative;
-    bottom: 115px;
-    margin-left: 163px;
-}
-.lines div{
-    display: flex;
-    border: solid 2px white;
-    width: 161px;
-    margin-left: 29px;
-}
-
-
-.title{
-    margin-top: 28px;
-}
-.title_title_1{
-    font-size: 100px;
-    line-height: 100px;
-    margin-left: 569px;
-    margin-top: 20px;
-}
-.title_title_2{
-    font-size: 180px;
-    line-height: 160px;
-    color: #1F252D;
-    position: relative;
-    bottom: 148px;
-    z-index: -1;
-}
-.title_title_21{
-    margin-left: 660px;
-}
-.card_cards{
-    margin-top: 28px;
-    display: flex;
-    gap: 50px;
-}
-.card_text{
-    font-size: 20px;
-    line-height: 20px;
-    margin-top: 5px;
-}
-.card_price{
-    display: flex;
-    gap: 67px;
-    margin-top: 14px;
-}
-.card_price a{
-    text-decoration: underline;
-    font-size: 20px;
-    line-height: 20px;
-}
-.price{
-    line-height: 20px;
-    font-size: 20px;
-}
-.watch_more{
-    font-size: 14px;
-    line-height: 20px;
-    text-decoration: underline;
-}
-.watch{
-    margin-top: 50px;
-    margin-left: 1067px;
-}
-
-.map_texts{
-    margin-top: 17px;
-}
-.map_title{
-    font-size: 100px;
-    line-height: 100px;
-    margin-top: 50px;
-    text-transform: uppercase;
-}
-.map_back{
-    font-size: 170px;
-    line-height: 160px;
-    color:#1F252D;
-    z-index: -1;
-    position: relative;
-    text-transform: uppercase;
-    bottom: 140px;
-}
-.map_img{
-    display: flex;
-    align-items: center;
-    gap: 166px;
-}
-.map_contact{
-    text-align: center;
-}
-.num{
-    font-size: 20px;
-    line-height: 20px;
-    margin-bottom: 25px;
-}
-.email{
-    font-size: 25px;
-    line-height: 25px;
-    margin-bottom: 25px;
-}
-
-.footer_footer{
-    display: flex;
-    margin-top: 103px;
-    align-items: center;
-}
-.footer_text{
-    margin-right: 143px;
-}
-.footer_mid{
-    margin-right:500px;
-    text-align: center;
-}
-.mid_text{
-    display: flex;
-    gap: 16px;
-}
-.mid_text p{
-    font-family: "Rosario", sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 18px;
-}
-.footer_text p{
-    font-family: "Rosario",sans-serif;
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 18px;
-}
-.menu_line{
-    border: solid 2px #D1C12B;
-    border-radius: 5px;
-    color: #D1C12B;
-    background-color: #D1C12B;
-    height: 6px;
-    width: 53px;
     margin-bottom: 10px;
 }
-.line_menu{
-    margin-top: 21px;
-    margin-left: 25px;
-    display: none;
+
+.main_back {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8rem;
+    color: #1F252D;
+    z-index: -1;
+    opacity: 0.8;
 }
-.main_back{
-    bottom: -30px;
-    font-size: 120px;
+
+.main_text {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    color: #D1C12B;
 }
-.seson_back{
-    font-size: 130px;
-    bottom: -645px;
+
+.main_button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 50px;
+    border: 2px solid #D1C12B;
+    color: #D1C12B;
+    border-radius: 30px;
+    font-family: "Rosario", sans-serif;
+    font-weight: 500;
+    text-shadow: 2px 2px 5px #000, 2px 2px 10px #D1C12B;
+    transition: all 0.3s ease;
 }
-.img_inner{
-    margin-right: 10px;
+
+.main_button:hover {
+    background-color: #D1C12B;
+    color: #0E141C;
+    transform: translateY(-2px);
+}
+
+.season {
+    padding: 100px 0;
+    position: relative;
+}
+
+.season_content {
+    position: relative;
+}
+
+.season_title {
+    font-size: 6rem;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.season_back {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    font-size: 8rem;
+    color: #1F252D;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.season_image_container {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.season_image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.season_overlay {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(14, 20, 28, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.season_text {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.season_button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 30px;
+    border: 2px solid #D1C12B;
+    color: #D1C12B;
+    border-radius: 25px;
+    font-family: "Rosario", sans-serif;
+    transition: all 0.3s ease;
+}
+
+.season_button:hover {
+    background-color: #D1C12B;
+    color: #0E141C;
+}
+
+.season_navigation {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.arrow {
+    width: 100px;
+    height: 3px;
+    background-color: #FFF;
+    position: relative;
+}
+
+.arrow::after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: -5px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid #FFF;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+
+.dots {
+    display: flex;
+    gap: 15px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dot.active {
+    background-color: #D1C12B;
+    border-color: #D1C12B;
 }
 
 
-@media (max-width: 800px){
-    .container{
-        max-width: 672px;
-        margin: 0 auto;
+.featured {
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+}
+
+.featured_title {
+    font-size: 4rem;
+    position: relative;
+    z-index: 2;
+}
+
+.featured_back {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6rem;
+    color: #1F252D;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.products {
+    padding: 60px 0;
+}
+
+.products_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.product_card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.product_card:hover {
+    transform: translateY(-5px);
+}
+
+.product_card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.product_info {
+    padding: 20px;
+}
+
+.product_name {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.product_price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #D1C12B;
+}
+
+.add_to_cart {
+    background: transparent;
+    border: 1px solid #D1C12B;
+    color: #D1C12B;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.add_to_cart:hover {
+    background: #D1C12B;
+    color: #0E141C;
+}
+
+.view_more {
+    text-align: center;
+}
+
+.view_more_btn {
+    color: #D1C12B;
+    text-decoration: underline;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.view_more_btn:hover {
+    color: #FFF;
+}
+
+.contacts {
+    padding: 80px 0;
+}
+
+.contacts_header {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.contacts_title {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.contacts_back {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 5rem;
+    color: #1F252D;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.map_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.map_image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.contact_info {
+    text-align: center;
+}
+
+.phone {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #D1C12B;
+}
+
+.email {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.social_icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social_icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social_icons img:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    padding: 50px 0;
+    border-top: 1px solid #2D3748;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer_links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer_links p {
+    font-size: 0.9rem;
+    color: #A0AEC0;
+    cursor: pointer;
+}
+
+.footer_links p:hover {
+    color: #D1C12B;
+}
+
+.footer_logo {
+    text-align: center;
+}
+
+.footer_logo img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.copyright p {
+    font-size: 0.9rem;
+    color: #A0AEC0;
+}
+
+.footer_social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer_social img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.footer_social img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+    .main_title {
+        font-size: 4rem;
     }
-    .top_links{
-        margin-left: 69px;
+    
+    .main_back {
+        font-size: 6rem;
     }
-    .top_links img{
+    
+    .season_title {
+        font-size: 4rem;
+    }
+    
+    .season_back {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile_menu_toggle {
+        display: flex;
+    }
+    
+    .desktop_nav {
         display: none;
     }
-    .top_icons{
-        position: absolute;
-        top:541px;
-        left: 340px;
-    }
-    .main_title{
-        font-size: 60px;
-        line-height: 52px;
-    }
-    .main_back{
-        font-size: 80px;
-        line-height: 70px;
-        bottom: 208px;
-    }
-    .seson_text{
+    
+    .menu_bottom {
         display: none;
     }
-    .img_inner{
-        position: absolute;
-        top: 585px;
-        left: 293px;
+    
+    .menu_top {
+        justify-content: space-between;
     }
-    .seson_title_1{
-        font-size: 80px;
-        line-height: 80px;
-        margin-bottom: 68px;
+    
+    .main_title {
+        font-size: 3rem;
     }
-    .seson_back{
-        font-size: 90px;
-        line-height: 140px;
-        bottom: -240px;
+    
+    .main_back {
+        font-size: 4rem;
     }
-    .lines{
-        bottom: 0;
-        margin-left: 0;
+    
+    .season_title {
+        font-size: 3rem;
     }
-    .arrow_1{
-        bottom: 50px;
+    
+    .season_back {
+        font-size: 4rem;
     }
-    .title_title_1{
-        font-size: 100px;
-        line-height: 100px;
-        margin-left: 0;
-    }
-    .title_title_2{
-        font-size: 80px;
-        line-height: 100px;
-    }
-    .title_title_21{
-        margin-left: 0;
-    }
-    .card_1,.card_2{
-        display: none;
-    }
-    .card_3{
-        margin-left: 40px;
-    }
-    .map_title{
-        font-size: 70px;
-        line-height: 70px;
-    }
-    .map_back{
-        font-size: 100px;
-        line-height: 160px;
-    }
-    .map_img{
-        display: block;
-    }
-    .num{
-        margin-top: 36px;
-    }
-    .footer_footer{
-        display: block;
-        text-align: center;
-        height: 219px;
-    }
-    .footer_text{
-        margin-right: 0;
-        margin-top: 85px;
-    }
-    .footer_mid{
-        margin-right: 0;
-    }
-    .footer_mid img{
-        position: absolute;
-        top: 3534px;
-        left: 330px;
-    }
-    .footer_icons{
+    
+    .season_overlay {
         position: relative;
-        bottom: 132px;
-    }
-    .mid_text{
-        margin-left: 270px;
+        bottom: 0;
+        right: 0;
         margin-top: 20px;
     }
+    
+    .map_section {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .footer_content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .products_grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
 }
-@media (max-width: 428px){
-    .container{
-        max-width: none;
-    }
-    .top_links{
-        display: none;
-    }
-    .menu_bottom{
-        display: none;
-    }
-    .top_icons{
-        position: unset;
-    }
-    .menu_top{
-        justify-content: end;
-    }
-    .main_back{
-        bottom: 140px;
-        font-size: 60px;
-        line-height: 52px;
-    }
-    .main_title{
-        font-size: 40px;
-        line-height: 34px;
-        margin-top: 35px;
-    }
-    .seson_back{
-        font-size: 60px;
-        line-height: 60px;
-        bottom: -155px;
-    }
-    .seson_title_1{
-        font-size: 60px;
-        line-height: 60px;
-        margin-bottom: 0;
-    }
-    .seson_image{
-        width: 428px;
-        height: 495px;
-    }
-    .img_inner a{
-        display: none;
-    }
-    .title_title_2{
-        font-size: 80px;
-        line-height: 60px;
-        bottom: 60px;
-    }
-    .title_title_1{
-        font-size: 60px;
-        line-height: 60px;
 
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
     }
-    .mid_text{
-        margin-left: 145px;
+    
+    .main_title {
+        font-size: 2.5rem;
     }
-    .footer_mid img{
-        top: 3500px;
-        left: 140px;
+    
+    .main_back {
+        font-size: 3rem;
     }
-    .card_3{
-        margin-left: 0;
+    
+    .season_title {
+        font-size: 2.5rem;
     }
-    .line_menu{
-        display: block;
+    
+    .season_back {
+        font-size: 3rem;
     }
-    .header_menu{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    
+    .featured_title {
+        font-size: 2.5rem;
+    }
+    
+    .featured_back {
+        font-size: 3.5rem;
+    }
+    
+    .contacts_title {
+        font-size: 2.5rem;
+    }
+    
+    .contacts_back {
+        font-size: 3.5rem;
+    }
+    
+    .products_grid {
+        grid-template-columns: 1fr;
     }
 }
